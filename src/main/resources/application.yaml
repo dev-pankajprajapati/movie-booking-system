@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: movie-booking-system
+
+  profiles:
+    active: dev
+
+  jackson:
+    default-property-inclusion: non_null
+
+jwt:
+  secret: bXlTdXBlclNlY3JldEtleUZvck1vdmllQm9va2luZ1N5c3RlbUpXVDIwMjZTZWN1cmVLZXk=
+  expiration: 86400000
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+    com.company.moviebooking: DEBUG
